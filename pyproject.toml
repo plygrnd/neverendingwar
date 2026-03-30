@@ -1,0 +1,31 @@
+[project]
+name = "new-osint"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "duckdb>=1.0.0",
+    "fastapi>=0.110.0",
+    "uvicorn>=0.29.0",
+    "httpx>=0.27.0",
+    "beautifulsoup4>=4.12.0",
+    "pyyaml>=6.0",
+    "praw>=7.7.0",
+    "pydantic>=2.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "respx>=0.21",
+]
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["config*", "collectors*", "db*", "analysis*", "api*"]
+
+[tool.setuptools]
+py-modules = ["models", "scheduler"]

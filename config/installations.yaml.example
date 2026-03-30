@@ -1,0 +1,168 @@
+# Military installations to monitor
+# lat/lon is approximate center of base
+# radius_km defines the collection area for nearby commercial activity
+# tier determines collection priority and cadence
+
+installations:
+  # Tier 1: Power Projection Platforms
+  - id: ft_liberty
+    name: "Fort Liberty (Bragg)"
+    branch: army
+    tier: 1
+    lat: 35.1380
+    lon: -79.0064
+    radius_km: 25
+    nearby_city: "Fayetteville, NC"
+    county: "Cumberland County, NC"
+    uhaul_locations: ["Fayetteville, NC", "Spring Lake, NC", "Southern Pines, NC"]
+    zillow_region: "fayetteville-nc"
+    subreddits: ["r/fayetteville", "r/FortLiberty"]
+    news_feeds:
+      - "https://www.fayobserver.com/arc/outboundfeeds/rss/"
+
+  - id: ft_campbell
+    name: "Fort Campbell"
+    branch: army
+    tier: 1
+    lat: 36.6629
+    lon: -87.4749
+    radius_km: 25
+    nearby_city: "Clarksville, TN"
+    county: "Montgomery County, TN"
+    uhaul_locations: ["Clarksville, TN", "Hopkinsville, KY", "Oak Grove, KY"]
+    zillow_region: "clarksville-tn"
+    subreddits: ["r/clarksville"]
+    news_feeds:
+      - "https://www.theleafchronicle.com/arc/outboundfeeds/rss/"
+
+  - id: ft_cavazos
+    name: "Fort Cavazos (Hood)"
+    branch: army
+    tier: 1
+    lat: 31.1349
+    lon: -97.7756
+    radius_km: 25
+    nearby_city: "Killeen, TX"
+    county: "Bell County, TX"
+    uhaul_locations: ["Killeen, TX", "Copperas Cove, TX", "Harker Heights, TX"]
+    zillow_region: "killeen-tx"
+    subreddits: ["r/killeen"]
+    news_feeds:
+      - "https://kdhnews.com/search/?f=rss"
+
+  - id: ft_stewart
+    name: "Fort Stewart"
+    branch: army
+    tier: 1
+    lat: 31.8691
+    lon: -81.6095
+    radius_km: 25
+    nearby_city: "Hinesville, GA"
+    county: "Liberty County, GA"
+    uhaul_locations: ["Hinesville, GA", "Ludowici, GA"]
+    zillow_region: "hinesville-ga"
+    subreddits: []
+    news_feeds: []
+
+  - id: camp_lejeune
+    name: "Camp Lejeune"
+    branch: usmc
+    tier: 1
+    lat: 34.6738
+    lon: -77.3975
+    radius_km: 25
+    nearby_city: "Jacksonville, NC"
+    county: "Onslow County, NC"
+    uhaul_locations: ["Jacksonville, NC", "Sneads Ferry, NC"]
+    zillow_region: "jacksonville-nc"
+    subreddits: ["r/jacksonvillenc"]
+    news_feeds:
+      - "https://www.jdnews.com/arc/outboundfeeds/rss/"
+
+  - id: ft_drum
+    name: "Fort Drum"
+    branch: army
+    tier: 1
+    lat: 44.0549
+    lon: -75.7586
+    radius_km: 25
+    nearby_city: "Watertown, NY"
+    county: "Jefferson County, NY"
+    uhaul_locations: ["Watertown, NY", "Evans Mills, NY"]
+    zillow_region: "watertown-ny"
+    subreddits: ["r/watertown"]
+    news_feeds:
+      - "https://www.watertowndailytimes.com/search/?f=rss"
+
+  - id: jblm
+    name: "Joint Base Lewis-McChord"
+    branch: army
+    tier: 1
+    lat: 47.0858
+    lon: -122.5826
+    radius_km: 25
+    nearby_city: "Lakewood, WA"
+    county: "Pierce County, WA"
+    uhaul_locations: ["Lakewood, WA", "Tacoma, WA", "Olympia, WA"]
+    zillow_region: "lakewood-wa"
+    subreddits: ["r/Tacoma", "r/jblm"]
+    news_feeds:
+      - "https://www.thenewstribune.com/news/local/military/rss"
+
+  # Tier 2: Significant Force Structure
+  - id: ft_carson
+    name: "Fort Carson"
+    branch: army
+    tier: 2
+    lat: 38.7375
+    lon: -104.7879
+    radius_km: 25
+    nearby_city: "Colorado Springs, CO"
+    county: "El Paso County, CO"
+    uhaul_locations: ["Colorado Springs, CO", "Fountain, CO"]
+    zillow_region: "colorado-springs-co"
+    subreddits: ["r/ColoradoSprings"]
+    news_feeds: []
+
+  - id: camp_pendleton
+    name: "Camp Pendleton"
+    branch: usmc
+    tier: 2
+    lat: 33.3047
+    lon: -117.3541
+    radius_km: 25
+    nearby_city: "Oceanside, CA"
+    county: "San Diego County, CA"
+    uhaul_locations: ["Oceanside, CA", "Vista, CA", "San Clemente, CA"]
+    zillow_region: "oceanside-ca"
+    subreddits: ["r/Oceanside"]
+    news_feeds: []
+
+  - id: norfolk_nab
+    name: "Naval Station Norfolk"
+    branch: navy
+    tier: 2
+    lat: 36.9465
+    lon: -76.3015
+    radius_km: 25
+    nearby_city: "Norfolk, VA"
+    county: "Norfolk City, VA"
+    uhaul_locations: ["Norfolk, VA", "Virginia Beach, VA", "Chesapeake, VA"]
+    zillow_region: "norfolk-va"
+    subreddits: ["r/norfolk", "r/VirginiaBeach"]
+    news_feeds:
+      - "https://www.pilotonline.com/arc/outboundfeeds/rss/"
+
+  - id: san_diego_nab
+    name: "Naval Base San Diego"
+    branch: navy
+    tier: 2
+    lat: 32.6839
+    lon: -117.1286
+    radius_km: 25
+    nearby_city: "San Diego, CA"
+    county: "San Diego County, CA"
+    uhaul_locations: ["San Diego, CA", "National City, CA", "Chula Vista, CA"]
+    zillow_region: "san-diego-ca"
+    subreddits: ["r/sandiego"]
+    news_feeds: []

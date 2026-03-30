@@ -1,0 +1,8 @@
+duckdb>=1.0.0
+fastapi>=0.110.0
+uvicorn>=0.29.0
+httpx>=0.27.0
+beautifulsoup4>=4.12.0
+pyyaml>=6.0
+praw>=7.7.0  # reddit API client (optional, can use httpx directly)
+pydantic>=2.0.0
